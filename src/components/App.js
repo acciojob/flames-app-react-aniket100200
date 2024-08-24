@@ -59,7 +59,7 @@ const App = () => {
                 <input
                     type="text"
                     id="input1"
-                    name="input1"
+                    name="name1"
                     placeholder="Enter the First Name."
                     data-testid="input1"
                     onChange={(e) => { setInput1(e.target.value); }}
@@ -68,13 +68,13 @@ const App = () => {
                 <input
                     type="text"
                     id="input2"
-                    name="input2"
+                    name="name2"
                     placeholder="Enter the Second Name."
                     data-testid="input2"
                     onChange={(e) => { setInput2(e.target.value); }}
                     style={inputStyle}
                 />
-                <button type="button" onClick={calculate} style={{ ...buttonStyle, backgroundColor: '#007bff' }}>
+                <button type="button" onClick={calculate} style={{ ...buttonStyle, backgroundColor: '#007bff' }} data-testid='calculate_relationship'>
                     Calculate Relationship Future
                 </button>
                 <button type="reset" onClick={clear} data-testid="clear" style={{ ...buttonStyle, backgroundColor: '#dc3545' }}>
